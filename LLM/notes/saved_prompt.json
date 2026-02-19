@@ -1,0 +1,16 @@
+{
+    "name": null,
+    "input_variables": [
+        "output_limit",
+        "user_input"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "you are a helpfull assistant, who answer in {output_limit} words, \n {user_input}",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}
