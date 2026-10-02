@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      .page_layout {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+      h5,
+      h4 {
+        font-weight: normal;
+      }
+      header {
+        display: flex;
+        
+        z-index: 1000;
+        margin: 6px;
+        min-height: 4.5vh;
+      }
+
+    
+      .flipkart_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        background-color: #f8d706;
+        width: 30%;
+      }
+      .flipkart_logo > img {
+        width: 30px;
+      }
+      .travel_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        width: 30%;
+        text-align: center;
+      }
+      .travel_section > img {
+        width: 30px;
+      }
+      .location_section {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 40%;
+      }
+      .location_section > img {
+        width: 30px;
+      }
+      .nav1,
+      .nav2 {
+        display: flex;
+        min-height: 6vh;
+        
+      }
+      .nav1 {
+        margin: 6px 14px;
+        justify-content: space-between;
+        gap: 30px;
+      }
+      input[type="text"] {
+        padding: 10px;
+        width: 50%;
+        border: 2px solid #1f74ba;
+        border-radius: 15px;
+      }
+      .login,
+      .cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login > img {
+        width: 30px;
+      }
+      .cart > img {
+        width: 30px;
+      }
+      .nav2 {
+        border: 1px solid lightgray;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+      }
+      .category {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: normal;
+      }
+      .category > img {
+        width: 30px;
+        height: 40px;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        margin: 6px 14px;
+        flex: 1;
+      }
+      .section,
+      .carousel_section {
+        margin: 10px 0px;
+        height: 400px;
+        background-color: #1f74ba;
+        border-radius: 15px;
+      }
+      .carousel_section > img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+      .section {
+        height: 800px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .product_gallery {
+        background-color: white;
+        border-radius: 10px;
+        margin: 6px;
+        height: 90%;
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .product {
+        width: 40%;
+        height: 40%;
+      }
+      .product > img {
+        text-align: center;
+        width: 100%;
+        height: 80%;
+      }
+      .product_info {
+        margin-top: 10px;
+        margin-left: 5px;
+      }
+      footer {
+        background-color: brown;
+        height: 20vh;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="page_layout">
+      <header>
+        <div class="flipkart_logo">
+          <img
+            src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
+            alt="logo"
+          />
+          <h4>Go Kart</h4>
+        </div>
+        <div class="travel_section">
+          <img
+            src="https://www.svgrepo.com/show/267418/aeroplane-plane.svg"
+            alt="travel logo"
+          />
+          <h4>Travel</h4>
+        </div>
+        <div class="location_section">
+          <img
+            src="https://www.svgrepo.com/show/532539/location-pin.svg"
+            alt="location"
+          />
+          <h4>Location not set</h4>
+        </div>
+      </header>
+
+      <div class="nav1">
+        <input
+          type="text"
+          class="searchbar"
+          name="search"
+          id="searchbox"
+          placeholder="Search for Products, Brands and More "
+        />
+        <div class="login">
+          <img
+            src="https://www.svgrepo.com/show/498301/profile-circle.svg"
+            alt=""
+          />
+          <h5>Login</h5>
+        </div>
+        <div class="cart">
+          <img
+            src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
+            alt=""
+          />
+          <h5>Cart</h5>
+        </div>
+      </div>
+
+      <div class="nav2">
+        <div class="category">
+          <img
+            src="https://www.svgrepo.com/show/523169/bag-smile.svg"
+            alt="forYou"
+          />
+          <h5>For You</h5>
+        </div>
+        <div class="category">
+          <img
+            src="https://www.svgrepo.com/show/419813/clothes-laundry-fashion.svg"
+            alt=""
+          />
+          <h5>Fashion</h5>
+        </div>
+        <div class="category">
+          <img src="https://www.svgrepo.com/show/473307/mobile.svg" alt="" />
+          <h5>Mobiles</h5>
+        </div>
+        <div class="category">
+          <img src="https://www.svgrepo.com/show/500358/desktop.svg" alt="" />
+          <h5>Electronics</h5>
+        </div>
+        <div class="category">
+          <img src="https://www.svgrepo.com/show/487527/lipstick.svg" alt="" />
+          <h5>Beauty</h5>
+        </div>
+        <div class="category">
+          <img src="https://www.svgrepo.com/show/490832/light.svg" alt="" />
+          <h5>Home</h5>
+        </div>
+        <div class="category">
+          <img
+            src="https://www.svgrepo.com/show/194481/teddy-bear-valentines.svg"
+            alt=""
+          />
+          <h5>Toys</h5>
+        </div>
+      </div>
+      <main>
+        <div class="carousel_section">
+          <img
+            src="https://rukminim2.flixcart.com/fk-p-flap/1000/490/image/1312x640-19f82h-1789727118303.png?q=80"
+            alt=""
+          />
+        </div>
+        <div class="section">
+          <h2>People also viewed</h2>
+          <div class="product_gallery">
+            <div class="product">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_7FI9cehneQxHEsmbVHCUUpG5BQUsmNNRbPYlWh2BQ&s=10"
+                alt=""
+              />
+              <div class="product_info">
+                <h4>Cello, Milton & more</h4>
+                <h3>From $95</h3>
+              </div>
+            </div>
+            <div class="product">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2uj0dF4i9EnTXo47wN1vUsrfLQo1VNEiQPi3EdSvDw&s=10"
+                alt=""
+              />
+              <div class="product_info">
+                <h4>Parryware, Nolta & more</h4>
+                <h3>From $46</h3>
+              </div>
+            </div>
+            <div class="product">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9gKXbH8hPXYom4T2rOmOBlPrr4hez88Is_GokmtWKjw&s=10"
+                alt=""
+              />
+              <div class="product_info">
+                <h4>Diesel, Skybags & more</h4>
+                <h3>From $49</h3>
+              </div>
+            </div>
+            <div class="product">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJE55nBw9LcfI_nbS8cN-QqJ3iBB359w7XaSip7IhPDQ&s=10"
+                alt=""
+              />
+              <div class="product_info">
+                <h4>Adidas, Nike & more</h4>
+                <h3>From $19</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h2>Hair & Skincare Essentials</h2>
+          <div class="product_gallery">
+            <div class="product">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW9vrKfVPmfIbEVN_UeXmj6_8zHb2hS-esiSdXT5E27g&s=10"
+                alt=""
+              />
+              <div class="product_info">
+                <h4>Cosrx, Beauty Of Josean & more</h4>
+                <h3>From $69</h3>
+              </div>
+            </div>
+            <div class="product">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC-BOympzLcaFn0rCUDNE19ow64SUUJO084s6SBpTqpQ&s=10"
+                alt=""
+              />
+              <div class="product_info">
+                <h4>Moxie, Pilgrim & more</h4>
+                <h3>From $19</h3>
+              </div>
+            </div>
+            <div class="product">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxsWtu4CH40g_GhvhOeJ8OOvOvp7VD_Aw7ooTNnv_11A&s=10"
+                alt=""
+              />
+              <div class="product_info">
+                <h4>Cetaphil, Nivea & more</h4>
+                <h3>From $45</h3>
+              </div>
+            </div>
+            <div class="product">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReF6qeHJziwLAeX1nDI7Aef1S0QWNGWEoguXZVVCnfBw&s"
+                alt=""
+              />
+              <div class="product_info">
+                <h4>Minimalist, Hyphen & more</h4>
+                <h3>From $12</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h2>Trending Gadgets & Applications</h2>
+          <div class="product_gallery">
+            <div class="product">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgrNx7CySiP04fTq3GXErPZ_OmZ2L6y5_9ZIu3vKc5gA&s"
+                alt=""
+              />
+              <div class="product_info">
+                <h4>Iphone, Motorola & more</h4>
+                <h3>From $999</h3>
+              </div>
+            </div>
+            <div class="product">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs6XCETsdanQS9IklykzhkQkUXXMYGGmrgil-c1qNXeA&s"
+                alt=""
+              />
+              <div class="product_info">
+                <h4>Nothing, Cmf & more</h4>
+                <h3>From $449</h3>
+              </div>
+            </div>
+            <div class="product">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqPkTSVKPU8t9sL-webs0k88PIq2bMM6LVYPbTKUIYvQ&s=10"
+                alt=""
+              />
+              <div class="product_info">
+                <h4>JBL, Sony & more</h4>
+                <h3>From $79</h3>
+              </div>
+            </div>
+            <div class="product">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjWN4pYT69-ZQW2A-fuHO7lp2MGeH3qQe8oYUH-3hkA&s=10"
+                alt=""
+              />
+              <div class="product_info">
+                <h4>G-shock, Samsung & more</h4>
+                <h3>From $99</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <h1>hello</h1>
+      </footer>
+    </div>
+  </body>
+</html>
