@@ -21,6 +21,15 @@
       h4 {
         font-weight: normal;
       }
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      ul{
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 0;
+      }
       header {
         display: flex;
         
@@ -105,8 +114,8 @@
         font-weight: normal;
       }
       .category > img {
-        width: 30px;
-        height: 40px;
+        max-width: 20%;
+        max-height: 10%;
       }
 
       main {
@@ -158,8 +167,25 @@
         margin-left: 5px;
       }
       footer {
-        background-color: brown;
-        height: 20vh;
+        min-height: 20vh;
+      }
+
+      .footer_layout{
+        display: flex;
+        justify-content: space-around;
+        overflow-wrap: break-word;
+      }
+      .about_section{
+        width: 20vw;
+      }
+      .help{
+        width: 20vw;
+      }
+      .consumer_policy{
+        width: 20vw;
+      }
+      .mail_us{
+        width: 20vw;
       }
 
     </style>
@@ -397,7 +423,62 @@
         </div>
       </main>
       <footer>
-        <h1>hello</h1>
+        <div class="footer_layout">
+          <div class="about_section">
+            <h3>About</h3>
+            <br>
+            <ul>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Flipkart Stories</a></li>
+              <li><a href="">Press</a></li>
+              <li><a href="">Flipkart Wholesale</a></li>
+              <li><a href="">Corporate Information</a></li>
+            </ul>
+          </div>
+          <div class="help">
+            <h3>HELP</h3>
+            <br>
+            <ul>
+              <li><a href="">Payments</a></li>
+              <li><a href="">Shipping</a></li>
+              <li><a href="">Cancellation & Returns</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Report</a></li>
+              <li><a href="">Infrigment</a></li>
+            </ul>
+          </div>
+          <div class="consumer_policy">
+            <h3>POLICY</h3>
+            <br>
+            <ul>
+              <li><a href="">Return Policy</a></li>
+              <li><a href="">Security</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Sitemap</a></li>
+              <li><a href="">EPR</a></li>
+              <li><a href="">Flipkart Wholesale</a></li>
+              <li><a href="">Corporate Information</a></li>
+            </ul>
+          </div>
+          <div class="mail_us">
+            <h3>Mail Us:</h3>
+            <br>
+            <p>
+              Flipkart Internet Private Limited <br>
+              Buildings Alyssa, Begonia & <br>
+              Clove Embassy Tech Village, <br>
+              
+              Bengaluru 560103 <br>
+              Karnataka, India <br>
+              CIN:U51109KA2012PTC066107 <br>
+              Telephone : 0494 1234567 <br>
+            </p>
+          </div>
+        </div>
+        <br>
+        <h5 style="text-align: center;">Copyright@2025</h5>
       </footer>
     </div>
   </body>
